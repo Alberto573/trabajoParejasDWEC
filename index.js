@@ -1,3 +1,4 @@
+//Calculo de precio por edad
 let edad = Number(prompt("Introduce tu edad: "));
 let precioEdad;
 
@@ -14,6 +15,7 @@ if (edad >= 0 && edad <= 3) {
 }
 console.log(precioEdad);
 
+//Calculo de precio por dia de la semana
 let dia = prompt("Dia de la semana: ");
 let descuentoDia;
 if (dia === "Lunes" || dia === "Martes") {
@@ -24,4 +26,14 @@ if (dia === "Lunes" || dia === "Martes") {
   descuentoDia = 0.9;
 } else {
   console.log("El día introducido no es válido");
+}
+
+let tamañoGrupo = Number(prompt("Indica el tamaño de tu grupo: "));
+let precioGrupo;
+if (tamañoGrupo >= 5) {
+  precioGrupo = 0.85;
+} else if (tamañoGrupo >= 0 && tamañoGrupo < 5) {
+  precioGrupo = 1;
+} else {
+  console.log("El número introducido no es válido");
 }
