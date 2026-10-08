@@ -37,3 +37,14 @@ if (tamañoGrupo >= 5) {
 } else {
   console.log("El número introducido no es válido");
 }
+
+let codigoDescuento = prompt("Código de descuento (opcional): ");
+let precioDescuento;
+
+if (codigoDescuento === "DESCUENTO10") {
+  precioDescuento = 10;
+} else {
+  precioDescuento = 0;
+}
+
+let precioFinal = precioEdad * descuentoDia * precioGrupo - precioDescuento;
